@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Contact Us - LUMINAS HAIR & BEAUTY</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.jpg" alt="LUMINAS HAIR & BEAUTY Logo">
+            </a>
+            <div class="navbar-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link active" href="contact.html">Contact</a>
+                <a class="btn-register" href="register.html">Register</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Contact Title -->
+    <h2 class="contact-title">Get in Touch with Us</h2>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <h2>Our Location</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8450512567884!2d90.35695141529943!3d23.81075139373416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8d0d75bdf33%3A0xd18d2c46962f6f4a!2sLUMINAS%20HAIR%20%26%20BEAUTY!5e0!3m2!1sen!2sbd!4v1625560710463!5m2!1sen!2sbd" 
+                    allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <p><strong>Contact Us</strong></p>
+                <p>Email: info@luminasbeauty.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Main Street, City, State, Country</p>
+            </div>
+            <div class="footer-section">
+                <p><strong>Social Media</strong></p>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 LUMINAS HAIR & BEAUTY. All rights reserved.</p>
+                <p><a href="/privacy-policy">Privacy Policy</a> | 
+                    <a href="/terms-of-service">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+               
+
+
+    <script src="script.js"></script>
+</body>
+</html>

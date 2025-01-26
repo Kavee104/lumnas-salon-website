@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>LUMINAS HAIR & BEAUTY</title>
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the navbar */
+        }
+        .navbar-nav {
+            justify-content: center; /* Center the nav items */
+            width: 100%; /* Make the navbar take full width */
+        }
+        .navbar-nav .nav-link {
+            margin-right: 15px; /* Space between links */
+            color: #ecf0f1; /* Light gray text color for links */
+        }
+        .navbar-nav .nav-link.active {
+            color: white; /* Change the Home button color to white */
+        }
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline; /* Underline on hover */
+            color: #f39c12; /* Gold color on hover for better visibility */
+        }
+        .btn-register {
+            margin-left: 15px; /* Space between links and button */
+            background-color: #e67e22; /* Orange background for the register button */
+            color: white; /* White text */
+            border: none; /* No border */
+        }
+        .btn-register:hover {
+            background-color: #d35400; /* Darker orange on hover */
+            color: white; /* Keep text white */
+        }
+        .navbar-brand img {
+            height: 60px; /* Increased height of the logo */
+            margin-right: 10px; /* Space between logo and brand name */
+        }
+        .hero-image {
+            max-width: 60%; /* Decrease the maximum width of the image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Make the image a block element */
+            margin: 20px auto; /* Center the image and add top/bottom margin */
+        }
+        /* Styles for the animated product name box */
+        .saloon-bar {
+            position: relative;
+            width: 100%; /* Make the width 100% to match the navbar */
+            height: 60px; /* Match the height of the navbar */
+            background-color: rgba(28, 28, 28, 0.8); /* Semi-transparent black background */
+            border: 2px solid #ff69b4; /* Pink border for emphasis */
+            border-radius: 15px; /* Rounded corners */
+            padding: 10px; /* Padding for inner spacing */
+            box-shadow: 0 4px 20px rgba(255, 105, 180, 0.5); /* Pink shine effect */
+            overflow: hidden; /* Prevent overflow */
+            margin: 20px auto; /* Center the bar */
+        }
+        .product-name {
+            position: absolute;
+            white-space: nowrap;
+            color: #ecf0f1; /* Light color for text */
+            font-size: 20px; /* Adjusted font size */
+            font-weight: bold; /* Bold text for visibility */
+            animation: slide 15s linear infinite; /* Slowed down animation */
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .info-section {
+            margin: 20px auto; /* Center the section */
+            padding: 20px; /* Padding for inner spacing */
+        }
+        .info-section img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .info-description {
+            padding-left: 20px; /* Space between image and text */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="image\logo.jpg" alt="LUMINAS HAIR & BEAUTY Logo">
+    </a>
+    <div class="navbar-nav">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Services</a>
+      <a class="nav-link" href="#">Contact</a>
+      <button class="btn btn-register">Register</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Centered Image under the navigation bar -->
+<div class="text-center">
+    <img src="image\p1.jpg" alt="Beautiful Hair and Beauty" class="hero-image">
+</div>
+
+<!-- Animated Product Name Box -->
+<div class="saloon-bar">
+  <div class="product-name">
+    💫 L'Oréal Serie Expert 💫 &nbsp; &nbsp; ✨ L'Oréal Professional ✨ &nbsp; &nbsp; 🌸 Wella Professionals 🌸 &nbsp; &nbsp; 💫 Matrix 💫 &nbsp; &nbsp; 🌟 Schwarzkopf Professional 🌟 &nbsp; &nbsp; 💖 Redken 💖 &nbsp; &nbsp; 🌈 Tigi Bed Head 🌈
+  </div>
+</div>
+
+<!-- New Info Section with Image and Description -->
+<div class="container info-section">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="image/p2.png" alt="Description Image" width="400" height="300">
+        </div>
+        <div class="col-md-6 info-description">
+            <h2>Our Services</h2>
+            <p>At Luminus Hair & Beauty, we offer a range of services to enhance your beauty and confidence. From hair styling to skincare treatments, our expert team is here to provide you with the best experience.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p><strong>Contact Us</strong></p>
+        <p>Email: info@yourwebsite.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Main Street, City, State, Country</p>
+      </div>
+      <div class="col-md-4">
+        <p><strong>Social Media</strong></p>
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+      </div>
+      <div class="col-md-4">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p><a href="/privacy-policy">Privacy Policy</a> | 
+        <a href="/terms-of-service">Terms of Service</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+  footer {
+    background-color: #a8a6a6; /* Set your desired background color here */
+    padding: 20px 0;
+  }
+  </style>
+
+</body>
+</html>

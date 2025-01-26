@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>LUMINAS HAIR & BEAUTY</title>
+    <style>
+        /* Animation Styles */
+        .slide-in {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar fade-in">
+        <div class="navbar-container">
+          <a class="navbar-brand" href="#">
+            <img src="image/logo.jpg" alt="LUMINAS HAIR & BEAUTY Logo">
+          </a>
+          <div class="navbar-links">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            
+<!-- Register Button -->
+<a href="register.html" class="btn-register">Register</a>
+
+
+          </div>
+        </div>
+      </nav>
+      
+
+<!-- Centered Video Section with Overlay Text -->
+<div class="video-section">
+  <video class="hero-video" autoplay muted loop>
+      <source src="v1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay">
+      <h1>Welcome to Luminas Hair & Beauty</h1>
+      <p>Where Elegance Meets Expertise</p>
+  </div>
+</div>
+
+<style>
+    /* Styling for the video and overlay */
+    .video-section {
+        position: relative;
+        width: 100%;
+        max-height: 500px;
+        overflow: hidden;
+    }
+
+    .hero-video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        text-shadow: 2px 2px 8px rgb(243, 243, 243);
+        z-index: 2;
+    }
+
+    .video-overlay h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .video-overlay p {
+        font-size: 1.5rem;
+    }
+
+    /* To ensure the video does not overlap */
+    .video-section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+        z-index: 1;
+    }
+</style>
+
+
+<!-- Info Section -->
+<div class="info-section slide-in">
+    <div class="info-row">
+        <div class="info-col">
+            <img src="image/ser 1.jpg" alt="Description Image" width="400" height="300">
+        </div>
+        <div class="info-col info-description">
+            <h2>Our Services</h2>
+            <p>At Luminus Hair & Beauty, we offer a range of services to enhance your beauty and confidence. From hair styling to skincare treatments, our expert team is here to provide you with the best experience.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="fade-in">
+  <div class="footer-container">
+    <div class="footer-section">
+      <p><strong>Contact Us</strong></p>
+      <p>Email: info@yourwebsite.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Address: 123 Main Street, City, State, Country</p>
+    </div>
+    <div class="footer-section">
+      <p><strong>Social Media</strong></p>
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </div>
+    <div class="footer-section">
+      <p>&copy; 2024 Your Website. All rights reserved.</p>
+      <p><a href="/privacy-policy">Privacy Policy</a> | 
+      <a href="/terms-of-service">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+    // Trigger animations on page load
+    window.onload = function() {
+        document.querySelector('.info-section').classList.add('slide-in');
+    };
+</script>
+
+</body>
+</html>

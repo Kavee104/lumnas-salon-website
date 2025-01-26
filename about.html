@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>About Us - LUMINAS HAIR & BEAUTY</title>
+    <style>
+        .about-section-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .about-item {
+            flex: 1;
+            text-align: center;
+            max-width: 30%;
+        }
+
+        .about-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .about-item h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .about-item p {
+            font-size: 1em;
+            color: #555;
+        }
+        
+
+        @media (max-width: 768px) {
+            .about-item {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+      
+        <div class="navbar-container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.jpg" alt="LUMINAS HAIR & BEAUTY Logo">
+            </a>
+            <div class="navbar-links">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="btn-register" href="register.html">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner-section">
+        <div class="banner-image">
+            <img src="aim.png" alt="LUMINAS Hair & Beauty About Banner">
+            <div class="banner-overlay">
+                <h1>Dedicated to redefining beauty with passion and precision in Sri Lanka</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="about-content">
+        <h2>About Us</h2>
+        <div class="about-section-row">
+            <!-- Our Journey -->
+            <div class="about-item">
+                <img src="image\jou.jpg" alt="Our Journey">
+                <h3>Our Journey</h3>
+                <p>From a humble beginning, LUMINAS Hair & Beauty has grown to become a trusted name in Sri Lanka's beauty industry. Our passion drives us to constantly innovate and inspire confidence in our clients.</p>
+            </div>
+
+            <!-- Our Vision -->
+            <div class="about-item">
+                <img src="image/vision.jpg" alt="Our Vision">
+                <h3>Our Vision</h3>
+                <p>Our vision is to redefine the beauty standards in Sri Lanka by delivering exceptional service and promoting self-confidence. We aim to be the leader in the beauty and wellness industry.</p>
+            </div>
+
+            <!-- Our Commitment -->
+            <div class="about-item">
+                <img src="image\com.jpg" alt="Our Commitment">
+                <h3>Our Commitment</h3>
+                <p>We are committed to providing our clients with the highest quality services while using eco-friendly and sustainable practices. Your trust inspires us to continuously strive for excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <p><strong>Contact Us</strong></p>
+                <p>Email: info@yourwebsite.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Main Street, City, State, Country</p>
+            </div>
+            <div class="footer-section">
+                <p><strong>Social Media</strong></p>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 Your Website. All rights reserved.</p>
+                <p><a href="/privacy-policy">Privacy Policy</a> |
+                    <a href="/terms-of-service">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
